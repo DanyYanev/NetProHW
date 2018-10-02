@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 
-public class SocketsClient {
+public class ChatClient {
 
 	public static void main(String[] args) throws IOException {
 		Socket echoSocket = null;
@@ -20,9 +20,15 @@ public class SocketsClient {
 			            new InputStreamReader(System.in));
 			    
 			    String userInput;
-			    while ((userInput = stdIn.readLine()) != null) {
-			        out.println(userInput);
-			        System.out.println("server response: " + in.readLine());
+			    
+			    while (true) {
+			    	if(stdIn.ready()) {
+			    		userInput = stdIn.readLine();
+			    		out.println(userInput);
+			    	}
+			    	if(in.ready()) {
+			    		System.out.println(in.readLine());
+			    	}
 			    }
 		} catch (Throwable t) {
 			System.out.println(t.getMessage());
