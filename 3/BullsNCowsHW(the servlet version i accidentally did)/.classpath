@@ -13,6 +13,8 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/home/dany/Downloads/commons-lang3-3.8.1-bin/commons-lang3-3.8.1/commons-lang3-3.8.1.jar"/>
 	<classpathentry kind="lib" path="/home/dany/Downloads/java-json.jar"/>
+	<classpathentry kind="lib" path="/home/dany/Downloads/junit-4.10.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
